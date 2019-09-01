@@ -1,1 +1,248 @@
+/*Global css starts*/
+
+@import url("assets/css/_global.css");
+@import url("assets/css/_svgfonts.css");
+@import url("assets/css/_customSelect.css");
+body {
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+}
+
+.pdp-wrapper-b4 {
+    margin-top: 129px;
+}
+
+@media (max-width:1024px) {
+    .pdp-wrapper-b4 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .pdp-wrapper-b4 {
+        padding-left: 20px;
+        padding-right: 20px;
+        /*        border: 1px solid red;*/
+    }
+}
+
+
+/*Global css Ends*/
+
+
+/*@import "src/assets/css/rockwell.min.css";*/
+
+
 /* You can add global styles to this file, and also import other style files */
+
+
+/*Global Navigation CSS fixings with Bootstrap4 styles conflicts*/
+
+#nav .navbar,
+#nav .container {
+    display: block;
+}
+
+#nav {
+    padding-top: 0;
+}
+
+@media (max-width: 992px) {
+    #RA_brandbar-row+#nav-container,
+    .brandbar-fixed-top+#nav-container {
+        height: auto !important;
+        top: 0;
+    }
+    #nav-mobile.navbar {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+    }
+    .navbar-menu.open {
+        height: auto;
+    }
+}
+
+@media (max-width:1024px) {
+    #nav-mobile .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    #nav-mobile #mobile-menu {
+        height: auto !important;
+    }
+}
+
+@media (max-width:991px) {
+    .pdp-wrapper-b4 .container,
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+        /*        border: 1px solid blue;*/
+    }
+}
+
+@media (max-width: 767px) {
+    #nav-mobile .container {
+        overflow-x: hidden;
+    }
+}
+
+#nav-mobile .navbar-menu {
+    right: 0;
+    height: 360px !important;
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    #nav-mobile #mobile-menu {
+        height: 360px !important;
+    }
+}
+
+@media (max-width: 767px) and (orientation:portrait) {
+    #nav-mobile #mobile-menu {
+        height: auto !important;
+    }
+}
+
+.ngx-gallery-image-wrapper {
+    z-index: 000 !important;
+}
+
+@media (min-width:1200px) {
+    .product-details-1st-section {
+        padding-right: 79px;
+    }
+}
+
+.product-details-2nd-section {
+    margin-top: 80px;
+}
+
+@media (max-width:1024px) {
+    .product-details-2nd-section {
+        margin-top: 56px;
+    }
+}
+
+@media (min-width:320px) and (max-width:991px) {
+    .pdp-wrapper-b4 .order-container {
+        display: flex;
+        flex-flow: column;
+    }
+    .pdp-wrapper-b4 .second-col {
+        order: 2;
+    }
+    .pdp-wrapper-b4 .first-col {
+        order: 1;
+    }
+}
+
+.ngx-gallery-thumbnail.ngx-gallery-active {
+    border: 1px solid #404041;
+    opacity: 1;
+}
+
+.ngx-gallery-thumbnail {
+    padding: 1px;
+    border: 1px solid #dbdbdb;
+    opacity: .7 !important;
+}
+
+.ngx-gallery-thumbnails {
+    /*
+    max-width: 78% !important;
+    left: 10% !important;
+    overflow: hidden;
+*/
+    margin-left: calc(54% - 170px) !important;
+    max-width: 300px !important;
+    overflow: hidden;
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    .ngx-gallery-thumbnails {
+        margin-left: calc(46% - 200px) !important;
+        max-width: 300px !important;
+    }
+}
+
+.ngx-gallery-thumbnail-size-cover .ngx-gallery-thumbnails .ngx-gallery-thumbnail {
+    background-size: 40px 40px;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.ngx-gallery-thumbnails-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    /*    background-color: rebeccapurple;*/
+    padding-top: 14px;
+}
+
+@media (max-width:991px) {
+    .ngx-gallery-thumbnails-wrapper {
+        padding-top: 12px;
+        height: 64px !important;
+    }
+}
+
+
+/*
+ngx-gallery /deep/ ngx-gallery-image .ngx-gallery-arrow {
+    display: none !important;
+}
+*/
+
+.ngx-gallery-icon .ngx-gallery-icon-content {
+    color: #162a36 !important;
+}
+
+@media (max-width:800px) {
+    .ngx-gallery-arrow {
+        top: 79% !important;
+    }
+    /*
+    .ngx-gallery-arrow-left .ngx-gallery-arrow {
+        left: auto !important;
+    }
+    .ngx-gallery-arrow-right .ngx-gallery-arrow {
+        right: auto !important;
+    }
+*/
+}
+
+.ngx-gallery-no-thumbnails .ngx-gallery-thumbnails {
+    display: none !important;
+}
+
+.ngx-gallery-no-thumbnails {
+    margin-bottom: -100px;
+}
+
+.ngx-gallery-arrow-wrapper {
+    z-index: 000 !important;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card:hover {
+    border-bottom: 2px solid #8c1a19;
+    background-color: #f1f1f2;
+    padding-top: 16px;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card a:hover {
+    color: #404041;
+    text-decoration: none;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card:focus {
+    border: 2px solid #8c1a19;
+    padding-top: 16px;
+}
+
+
+/* Accordion Styles*/

@@ -1,0 +1,30 @@
+[{
+    "groupName": "Technical Specification",
+    "dataGroups": [{
+            "subHeading": "Descripton",
+            "description": "Stratix 8000 managed switch, Layers 2, 6 ports"
+        },
+        {
+            "subHeading": "Inrush current, max",
+            "description": "2.0 A"
+        },
+        {
+            "subHeading": "Power input, max",
+            "description": "2 A max @ 18…60V DC, CL 2/SELV"
+        },
+        {
+            "subHeading": "Alarm relay, max",
+            "description": "1 A max @ 30V DC, CL 2/SELV"
+        },
+        {
+            "subHeading": "Isolation voltage",
+            "description": [
+                "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm",
+                "No isolation between individual Ethernet ports",
+                "No isolation between console port and system",
+                "Type tested at 1000V AC for 60 s"
+            ]
+        }
+    ]
+
+}]
